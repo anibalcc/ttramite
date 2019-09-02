@@ -15,7 +15,7 @@ Future<List<Tramite>> fetchTramites(
     http.Client client, String nroExpediente) async {
   final _body = "Expediente=" + nroExpediente;
   final response = await client.post(
-      "http://190.108.89.83/TramiteDocumentario2019/tramites/buscar_tramite_expediente/",
+      "http://URL/TramiteDocumentario2019/tramites/buscar_tramite_expediente/",
       body: _body,
       headers: {
         "Accept": "application/json",
